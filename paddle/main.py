@@ -46,8 +46,8 @@ for text, score, poly in zip(texts, scores, polys):
     x, y = box[0]
     draw.text((x, y - 20), f"{text} ({score:.2f})", fill="blue", font=font)
 
-# ---------- Save & Show ----------
+
 out_path = "result_pillow.png"
 image.save(out_path)
-image.show()   # Opens the result image
+image.show()  
 print(f"\n✅ OCR result saved as {out_path} and opened for preview.")
